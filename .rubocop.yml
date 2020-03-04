@@ -1,87 +1,87 @@
 AllCops:
-  DisplayCopNames: true
-  StyleGuideCopsOnly: false
+  # DisplayCopNames: true
+  # StyleGuideCopsOnly: false
   Exclude:
     - "docs/**/*"
     - "workspace/**/*"
     - "extensions/**/*"
-Style/FrozenStringLiteralComment:
-  Enabled: false
+# Style/FrozenStringLiteralComment:
+#   Enabled: false
 
-Style/HashEachMethods:
-  Enabled: false
+# Style/HashEachMethods:
+#   Enabled: false
 
-Style/HashTransformKeys:
-  Enabled: false
+# Style/HashTransformKeys:
+#   Enabled: false
 
-Style/HashTransformValues:
-  Enabled: false
+# Style/HashTransformValues:
+#   Enabled: false
 
-Layout/TrailingWhitespace:
-  Enabled: true
+# Layout/TrailingWhitespace:
+#   Enabled: true
 
-Metrics/ClassLength:
-  Enabled: false
+# Metrics/ClassLength:
+#   Enabled: false
 
 Layout/LineLength:
   Max: 100
 
-Metrics/MethodLength:
-  Enabled: false
+# Metrics/MethodLength:
+#   Enabled: false
 
-Metrics/BlockLength:
-  Enabled: false
+# Metrics/BlockLength:
+#   Enabled: false
 
-Metrics/AbcSize:
-  Enabled: false
+# Metrics/AbcSize:
+#   Enabled: false
 
-Style/Documentation:
-  Enabled: false
+# Style/Documentation:
+#   Enabled: false
 
-Style/DoubleNegation:
-  Enabled: false
+# Style/DoubleNegation:
+#   Enabled: false
 
-Metrics/CyclomaticComplexity:
-  Max: 50
+# Metrics/CyclomaticComplexity:
+#   Max: 50
 
-Metrics/PerceivedComplexity:
-  Max: 50
+# Metrics/PerceivedComplexity:
+#   Max: 50
 
-Style/RescueStandardError:
-  EnforcedStyle: implicit
+# Style/RescueStandardError:
+#   EnforcedStyle: implicit
 
-Style/IfInsideElse:
-  Enabled: false
+# Style/IfInsideElse:
+#   Enabled: false
 
-Style/RegexpLiteral:
-  Enabled: false
+# Style/RegexpLiteral:
+#   Enabled: false
 
-Style/RedundantReturn:
-  Enabled: false
+# Style/RedundantReturn:
+#   Enabled: false
 
-Style/RaiseArgs:
-  EnforcedStyle: compact
+# Style/RaiseArgs:
+#   EnforcedStyle: compact
 
-Style/WordArray:
-  Enabled: false
+# Style/WordArray:
+#   Enabled: false
 
-Metrics/BlockNesting:
-  Max: 5
+# Metrics/BlockNesting:
+#   Max: 5
 
-Layout/SpaceAroundOperators:
-  Enabled: false
+# Layout/SpaceAroundOperators:
+#   Enabled: false
 
-Style/MultilineIfModifier:
-  Enabled: false
+# Style/MultilineIfModifier:
+#   Enabled: false
 
-Style/PreferredHashMethods:
-  EnforcedStyle: verbose
+# Style/PreferredHashMethods:
+#   EnforcedStyle: verbose
 
-Style/RedundantBegin:
-  Enabled: false
+# Style/RedundantBegin:
+#   Enabled: false
 
-Naming/FileName:
-  Enabled: false
+# Naming/FileName:
+#   Enabled: false
 
-Naming/RescuedExceptionsVariableName:
-  Enabled: false
+# Naming/RescuedExceptionsVariableName:
+#   Enabled: false
