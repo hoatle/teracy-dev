@@ -22,10 +22,14 @@ fi
 
 echo "\$BRANCH_NAME: $BRANCH_NAME"
 
-. ./scripts/normalize_image_tag.sh $BRANCH_NAME
-. ./scripts/re_export_env_var.sh _${IMG_TAG^^}
+# affix
+AFFIX=$(echo "$BRANCH_NAME" | awk '{print tolower($0)}' | sed -e 's/[\/]/-/g' | sed -e 's/[\#]//g' | sed -e 's/[\.]/_/g');
 
-if ! contains "$GITHUB_REF" "refs/tags/"; then
+. ./scripts/re_export_env_var.sh _${AFFIX^^}
+
+if contains "$GITHUB_REF" "refs/tags/"; then
+  . ./scripts/normalize_image_tag.sh $BRANCH_NAME
+else
   CI_COMMIT_SHORT_SHA=$(git rev-parse --short HEAD)
   . ./scripts/normalize_image_tag.sh $BRANCH_NAME-$CI_COMMIT_SHORT_SHA
 fi
